@@ -19,23 +19,22 @@ function Data() {
         .catch(error =>{
             return "Error not workingggggg!"
         });        
-    }, [])
+    }, []);
 
-    console.log(data)
     return (
         <div>
 
             <div>
-            {<Title titleName={data} />}
-            {<Date date={data.date}/>}
+            <Title titleName={data.title} />
+            <Date date={data.date}/>
             </div>
 
             <div>
-                {<Img pic={data.url}/>}
+                <Img media={data.url}/>
             </div>
 
             <div>
-                {<Explanation exp={data.explanation} />}
+                <Explanation exp={data.explanation} />
             </div>
        
         </div>
