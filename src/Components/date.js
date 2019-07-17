@@ -1,6 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
+const Date = ({date}) => {
+  return (
+    <div>
+      <p>{date}</p>
+    </div>
+  );
+};
 
-const date = () =>{
-    
-}
+export default Date;

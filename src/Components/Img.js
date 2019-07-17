@@ -1,8 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
+const Img = ({media}) => {
+  return (
+    <div>
+      <img src={media} alt="Cool Nasa Picture or Video"/>
+    </div>
+  );
+};
 
-const img = () =>{
-    
-}
-
-export default img;
+export default Img;

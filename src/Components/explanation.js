@@ -1,8 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 
+const Explanation = ({exp}) => {
+  return (
+    <div>
+      <p>{exp}</p>
+    </div>
+  );
+};
 
-const explanation = () =>{
-    
-}
-
-export default explanation;
+export default Explanation;
