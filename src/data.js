@@ -4,6 +4,10 @@ import Date from "./Components/date.js";
 import Img from "./Components/Img.js";
 import Title from "./Components/title.js";
 import Explanation from "./Components/explanation.js";
+import {Card} from 'semantic-ui-react';
+
+
+
 
 
 function Data() {
@@ -22,24 +26,21 @@ function Data() {
     }, []);
 
     return (
-        <div>
-
-            <div>
-            <Title titleName={data.title} />
-            <Date date={data.date}/>
+        <div class="ui card">
+            <div class="content">
+            <div class="right floated meta"><Date date={data.date}/></div>
+                <Title titleName={data.title} />
             </div>
-
-            <div>
-                <Img media={data.url}/>
+            <div class="image">
+                <Img media={data.url} />
             </div>
-
-            <div>
-                <Explanation exp={data.explanation} />
+            <div class="content">
+            <span class="right floated">
+                Nasa Photo of The Day
+            </span>
+            <Explanation exp={data.explanation} />
             </div>
-       
         </div>
-
-
     )
     
 }
