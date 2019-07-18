@@ -26,19 +26,19 @@ function Data() {
     }, []);
 
     return (
-        <div class="ui card">
-            <div class="content">
-            <div class="right floated meta"><Date date={data.date}/></div>
-                <Title titleName={data.title} />
+        <div class="ui card" style = {{width: '80%', margin:"5%"}} textAlign="center" vertivalAlign="center">
+            <div class="content" >
+            <div class="right floated meta" style={{ width:"100%"}}><Date date={data.date}/></div>
+                <div style = {{width: '100%'}}><Title titleName={data.title} /></div>
             </div>
-            <div class="image">
+            <div class="image" style = {{width: '10%', padding:"10%"}}>
                 <Img media={data.url} />
             </div>
             <div class="content">
-            <span class="right floated">
-                Nasa Photo of The Day
-            </span>
-            <Explanation exp={data.explanation} />
+             <span class="right floated" style = {{width: '100%'}}>
+                    <p>Nasa Photo of The Day</p>
+                    <Explanation exp={data.explanation} />
+             </span >         
             </div>
         </div>
     )
